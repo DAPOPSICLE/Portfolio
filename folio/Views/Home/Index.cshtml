@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        img.fixed-size {
+            width: 200px;
+            height: 200px;
+            border-radius: 80px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .profile {
+            border: solid 1px #ccc;
+            border-radius: 20px;
+            padding: 50px 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .about {
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        .skills {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .Thesis {
+            margin-bottom: 50px;
+        }
+
+            .Thesis ul {
+                text-align: left;
+                margin: 20px auto;
+                width: 600px;
+                padding-left: 20px;
+            }
+
+            .Thesis img {
+                margin-top: 20px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color: #f1f1f1; padding: 20px; border-radius: 10px; margin: 0;">
+        <div class="profile">
+            <div style="padding-top:130px">
+            <img class="fixed-size" src="https://lh3.googleusercontent.com/a/ACg8ocL_Lsqk9f3A1a3-Bi9nNbF56VD7OYmS4uyFRajfzsICEJdCBbI4=s360-c-no" alt="Sample Image" />
+            <h1 class="display-4" style="font-size: 40px;">Patrick Cruz</h1>
+            <p style="font-size: 12px">COLEGIO DE SAN JUAN DE LETRAN MANILA</p>
+            <p style="margin-top: -20px;">BS INFORMATION TECHNOLOGY</p>
+            <p style="font-size: 12px; margin-top: -10px">
+                Dean’s Lister 1st Semester - 2021-2022 SY<br />
+                Dean’s Lister 1st Semester - 2022-2023 SY<br />
+                Dean’s Lister 2nd Semester - 2023-2024 SY<br />
+                Dean’s Lister 1st Semester - 2024-2025 SY
+            </p>
+            </div>
+
+        </div>
+
+        <div class="about">
+            <h1 class="display-4" style="font-size: 40px;"><b>About Me</b></h1>
+            <hr />
+            <p style="text-align: justify; margin-left: 30px;">
+                I am an IT student with a strong foundation in software development, database management, and problem-solving. I am seeking an internship opportunity where
+                I can apply my technical skills in a practical environment, contribute to meaningful projects, and collaborate with a dynamic team of professionals. My passion for continuous learning drives
+                me to stay updated with emerging technologies, and I am committed to expanding my expertise through real-world experience. I am eager to tackle challenges,
+                contribute innovative solutions, and refine my technical abilities while making meaningful contributions to the organization’s goals.
+            </p>
+            <hr />
+            <h1 class="display-4" style="font-size: 40px;"><b>Certifications</b></h1>
+
+            <div style="text-align:center; padding:20px;">
+                <img style="width: 500px; padding-bottom:20px;" src="https://all-digital.org/wp-content/uploads/2022/11/Certiport-Pearson-Logo-2016.png" alt="certiport">
+                <ul style="list-style-type: disc; padding-left: 0; text-align: center; list-style-position: inside;">
+                    <li>Certiport IT Specialist - HTML & CSS</li>
+                    <li>Certiport IT Specialist - Database</li>
+                </ul>
+            </div>
+
+            <hr />
+
+            <section id="services">
+                <div style="text-align:center; width:480px; padding-top:50px" class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <div>
+                                <img style="width: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/480px-2023_Facebook_icon.svg.png" alt="Facebook">
+                                <h2>Facebook</h2>
+                                <p>Patrick Louie Cruz</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div>
+                                <img style="width: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram">
+                                <h2>Instagram</h2>
+                                <p>Patricklouiee</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <div>
+                                <img style="width: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn">
+                                <h2>LinkedIn</h2>
+                                <p>Patrick Louie Cruz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <hr />
+
+    <div id="feature-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="margin-bottom:50px;" class="page-header">Soft Skills</h2>
+            </div>
+            <div class="col-sm-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                <div class="feature-inner text-center">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-2x fa-envelope text-primary"></i>
+                    </div>
+                    <h2>Multitasking</h2>
+                    <p>
+                        Managing multiple tasks simultaneously and efficiently.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+                <div class="feature-inner text-center">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-2x fa-heart text-danger"></i>
+                    </div>
+                    <h2>Adaptability</h2>
+                    <p>
+                        Adjusting effectively to changing circumstances and environments.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
+                <div class="feature-inner text-center">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-2x fa-star text-warning"></i>
+                    </div>
+                    <h2>Critical Thinking</h2>
+                    <p>Analyzing information and solving problems logically and thoughtfully.</p>
+                </div>
+            </div>
+            <div class="col-sm-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">
+                <div class="feature-inner text-center">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-2x fa-comments text-success"></i>
+                    </div>
+                    <h2>Verbal and Written Communication</h2>
+                    <p>Clearly and effectively sharing ideas and information through both written and spoken means.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="skills" style="background-color: #f1f1f1; padding: 20px; border-radius: 10px; margin: 0;">
+        <h1 class="display-4" style="font-size: 40px; text-align: center;"><b>Technical Skills</b></h1>
+        <p style="text-align: center;">Programming languages:</p>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img style="width: 150px; margin-right: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" />
+            <img style="width: 150px; margin-right: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMT8qaar9NoydZ3ysgCMqRA-5LX268tdENFw&s" alt="C#" />
+            <img style="width: 100px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" alt="Java" />
+        </div>
+        <p style="text-align: center;">Microsoft Office:</p>
+        <div style="text-align: center;">
+            <img style="width: 600px;" src="https://www.pngplay.com/wp-content/uploads/9/Microsoft-Transparent-Background.png" alt="Microsoft Office" />
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="Thesis">
+        <h1 class="display-4" style="font-size: 40px; text-align: center;"><b>THESIS</b></h1>
+        <div style="text-align: center;">
+            <img style="width: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJkS5upcDnTCiXQZKAurH-CxT3Bcj6_bKOTw&s" alt="Thesis Image">
+            <h1 style="font-size: 30px;">JL Uni Multiserv Inc. Integrated System</h1>
+            <p style="text-align: justify;">
+                This study aimed to plan, analyze, design, test, and implement an integrated system for JL Uni Multiserv Inc. to streamline enrollment and back-office administration,
+                improve customer information retrieval, and ensure compliance with the standards set by the Department of Labor and Employment (DOLE).
+            </p>
+            <ul>
+                <li>Developed using C# MVC ASP.NET Framework</li>
+                <li>Utilized HTML, CSS, and JavaScript for frontend development</li>
+                <li>Database management with Microsoft SQL Server</li>
+                <li>
+                    Integrated systems including:
+                    <ul>
+                        <li>Attendance Management System</li>
+                        <li>Scheduling System</li>
+                        <li>Enrollment, Assessment, and Certification processes</li>
+                    </ul>
+                </li>
+            </ul>
+            <img style="width: 450px;" src="/lib/ss.png" alt="Thesis Screenshot">
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
