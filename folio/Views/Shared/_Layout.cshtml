@@ -7,12 +7,46 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/folio.styles.css" asp-append-version="true" />
+    <style>
+        /* Header Styles */
+        header .navbar {
+            background-color: #343a40 !important; /* Darker background color */
+            border-bottom: 2px solid #495057; /* Slightly lighter border */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adjusted shadow for a darker theme */
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        header .nav-link {
+            color: #f8f9fa !important; /* Light color for links */
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+            header .nav-link:hover {
+                color: #17a2b8 !important; /* Slightly lighter blue for hover */
+            }
+
+            header .nav-link::after {
+                background-color: #17a2b8; /* Match hover color for underline */
+            }
+
+
+        /* Footer Styles */
+        .footer {
+            background-color: #343a40 !important;
+            padding: 1rem 0;
+            text-decoration-color:white !important;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">folio</a>
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">PATRICK</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +54,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" href="#softskills">SOFT SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#technicalskills">TECHNICAL SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#thesis">THESIS</a>
                         </li>
                     </ul>
                 </div>
@@ -38,12 +78,39 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - folio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <p style="color: white;">&copy; 2025 - Patrick -</p>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+    let lastScrollY = 0; // Tracks the last scroll position
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    // Only toggle the navbar after scrolling beyond a certain threshold (100px)
+    if (currentScrollY > 100) {
+        if (currentScrollY > lastScrollY) {
+            // Scrolling down: hide the navbar
+            navbar.classList.add('hidden');
+        } else {
+            // Scrolling up: show the navbar
+            navbar.classList.remove('hidden');
+        }
+    } else {
+        // Ensure navbar is visible near the top of the page
+        navbar.classList.remove('hidden');
+    }
+
+    // Update the last scroll position
+    lastScrollY = currentScrollY;
+});
+
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
